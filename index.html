@@ -1,15 +1,53 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Inicio - Mi sitio web</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="include" href="encabezado.html">
-</head>
-<body>
-    <main>
-        <h2>Bienvenido a mi sitio web</h2>
-        <p>Este es el contenido de la página de inicio.</p>
-    </main>
-</body>
+<html lang="en">
+  <head>
+    <title>Perla Negra</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+	<div id="header"></div>
+	<div id="content">
+	  <p>HOLA</p>
+	</div>
+	<div id="footer"></div>
+  
+	<script>
+	  // Crea una nueva instancia del objeto XMLHttpRequest	 
+	var xhttp = new XMLHttpRequest();
+
+	// Carga el contenido del archivo header.html en el contenedor #header
+	xhttp.onreadystatechange = function() {
+	  	if (this.readyState == 4 && this.status == 200) {
+	    	document.getElementById("header").innerHTML = this.responseText;
+  		}
+	};
+
+xhttp.open("GET", "encabezado.html", true);
+xhttp.send();
+	</script>  
+  <!-- loader -->
+  
+  </body>
 </html>
